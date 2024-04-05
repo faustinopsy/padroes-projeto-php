@@ -1,0 +1,15 @@
+{
+    "name": "app/src",
+    "description": "exercicios interfaces",
+    "autoload": {
+        "psr-4": {
+            "Design\\Patterns\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo faustino"
+        }
+    ],
+    "require": {}
+}
