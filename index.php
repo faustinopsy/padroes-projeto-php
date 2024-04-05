@@ -1,20 +1,17 @@
 <?php
 require 'vendor/autoload.php';
+use Design\Patterns\ControladorInterface;
+use Design\Patterns\Televisao;
 
-use Design\Patterns\MensagemInterface;
-use Design\Patterns\SMS;
-use Design\Patterns\Email;
-use Design\Patterns\Whatsapp;
-
-function notificarUsuario(MensagemInterface $mensageiro, $mensagem) {
-    $mensageiro->enviar($mensagem);
+function operarDispositivo(ControladorInterface $dispositivo) {
+    if ($dispositivo::getStatus()) {
+        $dispositivo->desligar();
+        return;
+    }
+    $dispositivo->ligar();
 }
+$tv1 = new Televisao();
+$tv2 = new Televisao();
 
-notificarUsuario(new Email(), "Olá via Email!");
-notificarUsuario(new SMS(), "Olá via SMS!");
-notificarUsuario(new Whatsapp(), "Olá via Whatsapp!");
-
-
-
-
-
+operarDispositivo($tv1); 
+operarDispositivo($tv2);
