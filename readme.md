@@ -1,4 +1,6 @@
-## Padrão de projeto de software (Software design pattern)
-Em Engenharia de Software, um padrão de desenho ou padrão de projeto é uma solução geral para um problema que ocorre com frequência dentro de um determinado contexto no projeto de software.
+## PHP – O que são Interfaces?
+As interfaces permitem especificar quais métodos uma classe deve implementar.
 
-em branches separadas haverá um exemplo modelo básico de como aplicar usando PHP, mas poderá ser extendido para outras linguagens.
+As interfaces facilitam o uso de uma variedade de classes diferentes da mesma maneira. Quando uma ou mais classes usam a mesma interface, isso é chamado de "polimorfismo".
+
+As interfaces são declaradas com a palavra-chave "interface" no lugar da palavra class
